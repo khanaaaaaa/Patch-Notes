@@ -1,3 +1,6 @@
 define eli = Character("Eli", color="#f5c842")
 define mina = Character("Mina", color="#c8a2c8")
+define mayor = Character("Mayor Aldoric", color="#a0c8a0")
+define child = Character("???", color="#ffffff")
 define narrator = Character(None)
+define dev = Character("...", color="#888888")
