@@ -1,38 +1,81 @@
 label version_06:
 
     narrator "[ VERSION 0.6 - Performance Patch ]"
+    pause 1.0
+
     narrator "Patch Notes:"
+    pause 0.5
     narrator " - Removed unnecessary NPC."
+    pause 0.5
     narrator " - Improved memory usage."
+    pause 0.5
     narrator " -General stability improvements."
+    pause 1.5
 
     scene bg black
     with dissolve
 
-    narrator "The next morning."
-    narrator "Mina is gone."
-    narrator "No memory."
-    narrator "No one nows who Mina is."
-    narrator "Her house never existed."
-    narrator "Her paintings."
-    narrator "Gone."
-    narrator "Photos.. gone."
+    narrator "You wake up."
+    narrator "Something is different."
+    narrator "The air is different."
+    narrator "The light is different."
+    narrator "The silence is different."
 
     scene bg room
     with dissolve
 
-    narrator "Except Eli still remembers."
-    narrator "He walks to the emptty field where her house once stood."
-    narrator "There is only grass."
-    narrator "Hidden inside the grass.."
-    narrator "A single forgotten object."
+    narrator "You go to Mina's house."
+    narrator "There is no Mina's house."
+    narrator "There is a field."
+    narrator "There has always been a field."
+
+    eli "Where is Mina?"
+    mayor "Who?"
+    eli "Mina. She lives- she lived on Birch Street."
+    mayor "There's no one by that name here, son."
+    eli "She was my best friend."
+    mayor "Are you feeling alright?"
+
+    narrator "You ask everyone."
+    narrator "The baker.. the children.. the new NPCs who appeared in version 0.2."
+    narrator "Nobody."
+    narrator "Not a flicker of recognition."
+    narrator "Not a hesitation."
+    narrator "Just blank, comfortable nothing."
+
+    narrator "You go to the field."
+    narrator "You stand where her door used to be."
+    narrator "The grass is perfect."
+    narrator "Undisturbed."
+    narrator "Like she was never there."
+
+    narrator "Except."
+    narrator "In the grass."
+    narrator "Half-hidden."
+    narrator "A notebook."
+
+    narrator "Not yours."
+    narrator "Hers."
+
     narrator "The developer forgot to delete one prop."
 
-    eli "..."
-    narrator "She opens the notebook."
+    narrator "You open it."
+    narrator "The first pages are full of her handwriting."
+    narrator "Notes about the versions.. about the rewrites.. about the people who disappeared."
+    narrator "About you."
+    narrator "She wrote about you."
+
+    narrator "The last page."
     narrator "One sentence."
     narrator "\"If you're reading this... I lost.\""
 
-    $ notebook_entries.append("Mina's final message: 'If you're reading this... I lost.'")
+    pause 2.0
+
+    narrator "You sit in the field for a long time."
+    narrator "The sun moves."
+    narrator "Nobody comes to find you."
+    narrator "Nobody knows how to."
+
+    $ notebook_entries.append("Mina's notebook. Last line: 'If you're reading this... I lost.'")
 
     jump version_07
