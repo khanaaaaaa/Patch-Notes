@@ -89,5 +89,6 @@ label version_05:
 
     $ notebook_entries.append("Mina remembers everything. She found the ROOT door past the invisible walls.")
     $ chose_to_remember = True
+    $ show_notebook_icon = True
 
     jump version_06

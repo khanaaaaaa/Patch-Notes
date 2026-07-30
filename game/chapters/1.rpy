@@ -59,7 +59,10 @@ label version_01:
         elif loop_count == 3:
             narrator "The third day."
             narrator "You already know what she's going to sat."
+            show minasmiletalk at center_char
             mina "Good morning!"
+            hide minasmiletalk
+            show minaneutralquiet at center_char
 
             menu:
                 "Morning!":
@@ -69,28 +72,51 @@ label version_01:
                     $ glitch_clicks += 2
                     $ eli_awareness += 1
                     eli "..Do you ever feel like we've had this conversation before?"
+                    hide minaneutralquiet
+                    show minasmiletalk at center_char
                     mina "What do you mean?"
+                    hide minasmiletalk
+                    show minaneutralquiet at center_char
                     narrator "She tilts her head and something flickers behind her eyes."
                     narrator "Just for a monent."
+                    hide minaneutralquiet
+                    show minasmiletalk at center_char
                     mina "Every morning is a new morning, Eli."
+                    hide minasmiletalk
+                    show minaneutralquiet at center_char
                     narrator "She says it like she's reading it."
             
+            hide minaneutralquiet
+            show minasmiletalk at center_char
             mina "Busy today?"
+            hide minasmiletalk
+            show minneutralquiet at center_char
             eli "Always!"
 
             if flitch_clicks >= 2:
+                hide minaneutralquiet
+                show minasmiletalk at center_char
                 mina "See you after the next upd-"
-                pause 0.5
+                hide minasmiletalk
+                show minaneutralquiet at center_char
                 narrator "She stops."
                 narrator "Her mouth closes."
                 narrator "Opens again."
+                hide minaneutraltalk
+                show minasmiletalk at center_char
                 mina "..See you tomorrow."
+                hide minasmiletalk
+                show minaneutralquiet at center_char
                 narrator "She blinks twice, and corrects herself."
                 narrator "The bell rings twice twice."
                 narrator "You stand very still."
-                narator "You don't know why your hands are shaking."
+                narrator "You don't know why your hands are shaking."
+                hide minaneutralquiet
             else:
+                hide minaneutralquiet
+                show minasmiletalk at center_char
                 mina "See you tomorrow."
+                hide minasmiletalk
 
         if loop_count < 3:
             jump prototype_loop

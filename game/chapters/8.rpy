@@ -49,5 +49,6 @@ label version_08:
 
     $ notebook_entries.append("Clara. The mayor's wife. Her name was Clara.")
     $ notebook_entries.append("Mina appeared in the bakery. Said commit messages. Eyes were wrong.")
+    $ show_notebook_icon = True
 
     jump version_09

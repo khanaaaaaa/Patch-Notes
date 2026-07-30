@@ -1619,3 +1619,58 @@ style slider_vbox:
 style slider_slider:
     variant "small"
     xsize 900
+
+screen notebook_icon():
+    zorder 50
+    if show_notebook_icon:
+        imagebutton:
+            idle "gui/notebook_icon.png"
+            hover "gui/notebook_icon_hover.png"
+            xalign 1.0
+            yalign 0.0
+            xoffset -20
+            yoffset 20
+            action Show("notebook_screen")
+
+screen notebook_screen():
+    modal True
+    zorder 100
+
+    add Solid("#000000cc")
+
+    frame:
+        xalign 0.5
+        yalign 0.5
+        xsize 600
+        ysize 500
+        background "#1a1a1aff"
+        padding (30, 30)
+
+        vbox:
+            spacing 15
+
+            text "Eli's Notebook" color "#f5c842" size 28 xalign 0.5
+
+            null height 10
+
+            if len(notebook_entries) == 0:
+                text "Nothing written yet." color "#aaaaaa" size 18
+            else:
+                viewport:
+                    scrollbars "vertical"
+                    mousewheel True
+                    ysize 350
+                    vbox:
+                        spacing 20
+                        for entry in notebook_entries:
+                            text "- [entry]" color "#dddddd" size 17
+
+            null height 10
+
+            textbutton "Close":
+                xalign 0.5
+                action Hide("notebook_screen")
+                text_color "#c8a2c8"
+
+init python:
+    config.overlay_screens.append("notebook_icon")

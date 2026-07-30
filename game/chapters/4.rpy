@@ -104,5 +104,6 @@ label version_04:
 
     $ notebook_entries.append("Petra the flower seller. Removed Tuesday. Red hair. Extra stem.")
     $ notebook_entries.append("Mr. Voss the librarian. Removed Thursday. Had a cat. Cat also gone.")
+    $ show_notebook_icon = True
 
     jump version_05

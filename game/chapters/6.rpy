@@ -29,6 +29,8 @@ label version_06:
     narrator "There is a field."
     narrator "There has always been a field."
 
+    $ show_notebook_icon = False
+
     eli "Where is Mina?"
     mayor "Who?"
     eli "Mina. She lives- she lived on Birch Street."
@@ -77,5 +79,6 @@ label version_06:
     narrator "Nobody knows how to."
 
     $ notebook_entries.append("Mina's notebook. Last line: 'If you're reading this... I lost.'")
+    $ show_notebook_icon = True
 
     jump version_07
