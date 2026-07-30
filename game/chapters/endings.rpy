@@ -1,6 +1,9 @@
 label final_choice:
 
-    narrator "The game asks:"
+    narrator "The computer is still on."
+    narrator "The developer is still asleep."
+    narrator "The cursor blinks."
+    narrator "Three options on the screen"
 
     menu:
         "Release - The world becomes permanent, everyone left unfinished stays unfinished forever.":
