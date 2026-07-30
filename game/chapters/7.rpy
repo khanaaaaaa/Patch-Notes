@@ -1,6 +1,6 @@
 label version_07:
 
-    narrator "[ VERSION 0.7 - Ambition ]"
+    narrator "\[ VERSION 0.7 - Ambition \]"
     pause 0.5
 
     narrator "The developer decides the game needs more."
@@ -29,7 +29,7 @@ label version_07:
     narrator "The marker pulses."
     narrator "Waiting."
 
-    narrator "The other half of the town still acts like a cozy vollage."
+    narrator "The other half of the town still acts like a cozy village."
     narrator "The flower seller's empty stall.. the library with no librarian."
     narrator "Children playing near the edge of the world."
     narrator "Two realities existing in the same space."
@@ -40,7 +40,7 @@ label version_07:
             narrator "You follow every marker."
             narrator "Every single one leads to nothing."
             narrator "The game is promising things it hasn't built yet."
-            $ eli_awarness += 1
+            $ eli_awareness += 1
         "Go back to the field where Mina's house was.":
             narrator "You go back to the field."
             narrator "You sit with her notebook."

@@ -1,6 +1,6 @@
 label version_03:
 
-    narrator "[ VERSION 0.3 - Rewrites ]"
+    narrator "\[ VERSION 0.3 - Rewrites \]"
     pause 0.5
 
     narrator "It starts small."
@@ -18,7 +18,8 @@ label version_03:
     narrator "When she showed you the valley painting and asked if the light looked right."
 
     menu:
-        "\"You're joking.":
+        "\"You're joking.\"":
+            eli "You're joking."
             mina "Why would I joke about that?"
             narrator "She genuinely looks confused."
         "\"I have a photo of you painting on my phone.\"":
@@ -49,7 +50,7 @@ label version_03:
     narrator "It's just him now... smiling alone."
 
     narrator "That night you start a notebook."
-    narrator "You wrte down everything you remember."
+    narrator "You write down everything you remember."
     narrator "Mina's painting, the mayor's wife, and the river that appeared overnight."
     narrator "You fall asleep with the pen in your hand."
     narrator "In the morning, three pages are blank."

@@ -1,6 +1,6 @@
 label version_05:
 
-    narrator "[ VERSION 0.5 - Feature Cut ]"
+    narrator "\[ VERSION 0.5 - Feature Cut \]"
     pause 0.5
 
     narrator "Mina starts glitching."
@@ -79,7 +79,7 @@ label version_05:
     else:
         eli "Why are you telling me this now?"
         mina "Because I found something."
-        mina "And I might get another chance."
+        mina "And I might not get another chance."
 
     mina "Past the invisible walls past the edge of the world."
     mina "There's a white empty room."

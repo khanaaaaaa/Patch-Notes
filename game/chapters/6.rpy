@@ -1,6 +1,6 @@
 label version_06:
 
-    narrator "[ VERSION 0.6 - Performance Patch ]"
+    narrator "\[ VERSION 0.6 - Performance Patch \]"
     pause 1.0
 
     narrator "Patch Notes:"
@@ -9,7 +9,7 @@ label version_06:
     pause 0.5
     narrator " - Improved memory usage."
     pause 0.5
-    narrator " -General stability improvements."
+    narrator " - General stability improvements."
     pause 1.5
 
     scene bg black

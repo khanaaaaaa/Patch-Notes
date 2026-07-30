@@ -1,6 +1,6 @@
 label version_02:
 
-    narrator "[ VERSION 0.2 - Expansion ]"
+    narrator "\[ VERSION 0.2 - Expansion \]"
     narrator "You wake up."
     naarator "Something is wrong."
     naarator "Not wrong like a nightmare."

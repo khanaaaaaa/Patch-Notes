@@ -1,6 +1,6 @@
 label version_08:
 
-    narrator "[ VERSION 0.8 - Crunch ]"
+    narrator "\[ VERSION 0.8 - Crunch \]"
     pause 0.5
 
     narrator "The commits get worse."
@@ -13,7 +13,7 @@ label version_08:
 
     narrator "Two bakeries appear on the same street."
     narrator "Identical."
-    narrator "You work in both of them aomehow."
+    narrator "You work in both of them somehow."
     narrator "You don't remember crossing the street."
 
     narrator "The mayor starts speaking like someone else."

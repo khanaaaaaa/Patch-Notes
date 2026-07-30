@@ -24,7 +24,7 @@ label the_twist:
     pause 2.0
 
     narrator "The developer didn't delete Mina because she wasn't important."
-    narrator "He deleted her because her because she used the most memory."
+    narrator "He deleted her because she used the most memory."
     narrator "She was the most complex.. the most alive."
     narrator "And that's exactly why she had to go."
 
@@ -32,7 +32,7 @@ label the_twist:
     narrator "Every cut feature kept development alive."
     narrator "Every optimization was a small death that kept the world breathing."
 
-    narrator "He nevwr meant to hurt anyone."
+    narrator "He never meant to hurt anyone."
     narrator "He was just trying to finish something."
     narrator "He was just trying to make something real."
 
