@@ -1,7 +1,7 @@
 label start:
 
     scene bg black
-    with with fade
+    with fade
 
     narrator "You are Eli."
     narrator "You bake bread every morning."
@@ -11,7 +11,7 @@ label start:
     narrator "You wake up."
     narrator "You do it again."
     pause 1.0
-    narrator "It feels like the perfect coxy game."
+    narrator "It feels like the perfect cosy game."
     pause 0.5
     narrator "Except..."
     pause 1.0

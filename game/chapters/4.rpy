@@ -1,6 +1,6 @@
-label version_04:
+label version_035:
 
-    narrator "[ VERSION 0.4 - Optimiztion ]"
+    narrator "[ VERSION 0.35 - Broken Build ]"
     pause 0.5
 
     narrator "Something breaks."
@@ -9,7 +9,7 @@ label version_04:
 
     narrator "It rains inside the bakery."
     narrator "Not through the ceiling."
-    narrator "Just.. inside."
+    narrator "Just... inside."
     narrator "Falling from nothing."
     narrator "The bread gets wet."
     narrator "You stand in indoor rain and don't know what to do."
@@ -33,7 +33,7 @@ label version_04:
     narrator "Mina visits."
 
     mina "Good morning!"
-    eli "Mina.. the sun hasn't risen."
+    eli "Mina... the sun hasn't risen."
     mina "It's a beautiful day, isn't it?"
     eli "It's pitch black outside."
     mina "Perfect baking weather."
@@ -67,23 +67,23 @@ label version_04:
 
     narrator "The flower seller disappeared on a Tuesday."
     narrator "You notice because you bought roses from her every week."
-    narrator "For no reason, just because it was there."
+    narrator "For no reason. Just because they were there."
 
     eli "Where's the flower seller?"
-    mina "The flowers are self-service, they always have been."
-    eli "She had a name, it was Petra."
+    mina "The flowers are self-service. They always have been."
+    eli "She had a name. It was Petra."
     mina "Who?"
-    eli "Petra.. she had red hair?"
+    eli "Petra. She had red hair. She always gave me an extra stem."
     mina "Eli, there's no one by that name in Maple Crossing."
 
     narrator "You check your notebook."
-    narrator "There is a page that says PETRA - red hair - extra stem - Tusday roses."
+    narrator "There is a page that says PETRA - red hair - extra stem - Tuesday roses."
     narrator "The ink is faded."
     narrator "Getting fainter as you watch."
 
     narrator "The librarian disappears on a Thursday."
     narrator "His name was Mr. Voss."
-    narrator "He recommended books, remembered what you liked."
+    narrator "He recommended books. He remembered what you liked."
     narrator "He had a cat that slept on the returns desk."
 
     eli "What happened to Mr. Voss?"
@@ -91,12 +91,13 @@ label version_04:
     eli "He had a cat."
     mayor "Libraries don't allow animals."
     narrator "The cat is gone too."
-    narrator "There is a dent of something small that used to sleep there."
+    narrator "There is a dent in the cushion on the returns desk."
+    narrator "The shape of something small that used to sleep there."
 
     narrator "You start hearing it at night."
     narrator "Not a voice exactly."
     narrator "More like a system sound."
-    narrator "Low, and flat."
+    narrator "Low. Flat. Final."
     narrator "\"Optimization complete.\""
     narrator "\"Optimization complete.\""
     narrator "\"Optimization complete.\""
@@ -104,4 +105,4 @@ label version_04:
     $ notebook_entries.append("Petra the flower seller. Removed Tuesday. Red hair. Extra stem.")
     $ notebook_entries.append("Mr. Voss the librarian. Removed Thursday. Had a cat. Cat also gone.")
 
-jump version_05
+    jump version_05
