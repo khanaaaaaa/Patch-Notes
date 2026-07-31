@@ -31,12 +31,24 @@ label version_06:
 
     $ show_notebook_icon = False
 
+    show mayorsmilequiet at center_char
     eli "Where is Mina?"
+    hide mayorsmilequiet
+    show mayorneutraltalk at center_char
     mayor "Who?"
+    hide mayorneutraltalk
+    show mayorneutralquiet at center_char
     eli "Mina. She lives- she lived on Birch Street."
+    hide mayorneutralquiet
+    show mayorneutraltalk at center_char
     mayor "There's no one by that name here, son."
+    hide mayorneutraltalk
+    show mayorneutralquiet at center_char
     eli "She was my best friend."
+    hide mayorneutralquiet
+    show mayorneutraltalk at center_char
     mayor "Are you feeling alright?"
+    hide mayorneutraltalk
 
     narrator "You ask everyone."
     narrator "The baker.. the children.. the new NPCs who appeared in version 0.2."

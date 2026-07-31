@@ -3,6 +3,8 @@ label version_035:
     narrator "[ VERSION 0.35 - Broken Build ]"
     pause 0.5
 
+    scene bg black
+
     narrator "Something breaks."
     narrator "Not metaphorically."
     narrator "Something in the world itself breaks."
@@ -32,21 +34,36 @@ label version_035:
     narrator "People go about their day like normal."
     narrator "Mina visits."
 
+    show minaneutraltalk at center_char
     mina "Good morning!"
+    hide minaneutraltalk
+    show minaneutralquiet at center_char
     eli "Mina... the sun hasn't risen."
+    hide minaneutralquiet
+    show minasmiletalk at center_char
     mina "It's a beautiful day, isn't it?"
+    hide minasmiletalk
+    show minaneutralquiet at center_char
     eli "It's pitch black outside."
+    hide minaneutralquiet
+    show minasmiletalk at center char
     mina "Perfect baking weather."
-
+    hide minasmiletalk
+    show minaneutralquiet at center_char
     narrator "She smiles."
     narrator "You look at her for a long time."
 
     menu:
         "\"Are you okay?\"":
             eli "Are you okay?"
+            hide minaneutralquiet
+            show minasmiletalk at center_char
             mina "I'm always okay."
+            hide minasmiletalk
+            show minaneutralquiet at center_char
             narrator "She says it like a fact."
             narrator "Like something she was told to say."
+            hide minaneutralquiet
             $ mina_trust += 1
         "\"Do you notice anything wrong with the sky?\"":
             eli "Do you notice anything wrong with the sky?"
@@ -54,8 +71,13 @@ label version_035:
             narrator "She pauses."
             narrator "Just for a second."
             narrator "Her eyes go somewhere else."
+            hide minaneutralquiet
+            show minaneutraltalk at center_char
             mina "The sky looks fine to me."
+            hide minaneutraltalk
+            show minaneutralquiet at center_char
             narrator "But her voice is quieter than usual."
+            hide minaneutralquiet
             $ mina_trust += 2
 
     jump version_04
@@ -69,12 +91,24 @@ label version_04:
     narrator "You notice because you bought roses from her every week."
     narrator "For no reason. Just because they were there."
 
+    show minaneutralquiet at center_char
     eli "Where's the flower seller?"
-    mina "The flowers are self-service. They always have been."
-    eli "She had a name. It was Petra."
+    hide minaneutralquiet
+    show minaneutraltalk at center_char
+    mina "The flowers are self-service.. they always have been."
+    hide minaneutraltalk
+    show minaneutralquiet at center_char
+    eli "She had a name, it was Petra."
+    hide minaneutralquiet
+    show minaneutraltalk at center_char
     mina "Who?"
-    eli "Petra. She had red hair. She always gave me an extra stem."
+    hide minaneutraltalk
+    show minaneutralquiet at center_char
+    eli "Petra, red hair. She always gave me an extra stem."
+    hide minaneutralquiet
+    show minaneutraltalk at center_char
     mina "Eli, there's no one by that name in Maple Crossing."
+    hide minaneutraltalk
 
     narrator "You check your notebook."
     narrator "There is a page that says PETRA - red hair - extra stem - Tuesday roses."
@@ -86,10 +120,18 @@ label version_04:
     narrator "He recommended books. He remembered what you liked."
     narrator "He had a cat that slept on the returns desk."
 
+    show mayorsmilequiet at center_char
     eli "What happened to Mr. Voss?"
+    hide mayorsmilequiet
+    show mayorsmiletalk at center_char
     mayor "The library has always been self-service, son."
+    hide mayorsmiletalk
+    show mayorsmilequiet at center_char
     eli "He had a cat."
+    hide mayorsmilequiet
+    show mayorsmiletalk at center_char
     mayor "Libraries don't allow animals."
+    hide mayorsmiletalk 
     narrator "The cat is gone too."
     narrator "There is a dent in the cushion on the returns desk."
     narrator "The shape of something small that used to sleep there."
