@@ -134,8 +134,7 @@ style window:
     xfill True
     yalign gui.textbox_yalign
     ysize gui.textbox_height
-
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    background Frame(Solid("#0d0a0fee"), 0, 0, 0, 0)
 
 style namebox:
     xpos gui.name_xpos
@@ -143,14 +142,15 @@ style namebox:
     xsize gui.namebox_width
     ypos gui.name_ypos
     ysize gui.namebox_height
-
-    background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
+    background Frame(Solid("#1a1020ee"), gui.namebox_borders, title=gui.namebox_title, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
 
 style say_label:
     properties gui.text_properties("name", accent=True)
     xalign gui.name_xalign
     yalign 0.5
+    color "#c8a2c8"
+    size 34
 
 style say_dialogue:
     properties gui.text_properties("dialogue")
@@ -160,6 +160,8 @@ style say_dialogue:
     ypos gui.dialogue_ypos
 
     adjust_spacing False
+    color "#e8e0e8"
+    line_spacing 8
 
 ## Input screen ################################################################
 ##
@@ -218,16 +220,21 @@ style choice_button_text is button_text
 
 style choice_vbox:
     xalign 0.5
-    ypos 405
+    ypos 420
     yanchor 0.5
-
-    spacing gui.choice_spacing
+    spacing 18
 
 style choice_button is default:
     properties gui.button_properties("choice_button")
+    background Frame(Solid("#1a0f2aee"), 30, 12, 30, 12)
+    hover_background Frame(Solid("#2a1f3aee"), 30, 12, 30, 12)
+    padding (30, 12)
 
 style choice_button_text is default:
     properties gui.text_properties("choice_button")
+    idle_color "#a090a0"
+    hover_color "#f5c842"
+    insensitive_color "#4a3a4a7f"
 
 
 ## Quick Menu screen ###########################################################
@@ -237,7 +244,6 @@ style choice_button_text is default:
 
 screen quick_menu():
 
-    ## Ensure this appears on top of other screens.
     zorder 100
 
     if quick_menu:
@@ -254,7 +260,6 @@ screen quick_menu():
             textbutton _("Q.Save") action QuickSave()
             textbutton _("Q.Load") action QuickLoad()
             textbutton _("Prefs") action ShowMenu('preferences')
-
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
 ## the player has not explicitly hidden the interface.
@@ -273,9 +278,14 @@ style quick_menu:
 
 style quick_button:
     properties gui.button_properties("quick_button")
+    background None
+    hover_background None
 
 style quick_button_text:
     properties gui.text_properties("quick_button")
+    idle_color "#5a4a5a"
+    hover_color "#c8a2c8"
+    size 20
 
 
 ################################################################################
@@ -342,6 +352,9 @@ style navigation_button:
 
 style navigation_button_text:
     properties gui.text_properties("navigation_button")
+    idle_color "#8a7a8a"
+    hover_color "#f5c842"
+    size 28
 
 
 ## Main Menu screen ############################################################
@@ -528,8 +541,8 @@ style game_menu_label:
     ysize 180
 
 style game_menu_label_text:
-    size 75
-    color gui.accent_color
+    size 60
+    color "#c8a2c8"
     yalign 0.5
 
 style return_button:
@@ -1194,6 +1207,7 @@ style confirm_frame:
 style confirm_prompt_text:
     textalign 0.5
     layout "subtitle"
+    color "#e8e0e8"
 
 style confirm_button:
     properties gui.button_properties("confirm_button")
