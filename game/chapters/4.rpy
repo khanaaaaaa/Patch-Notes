@@ -1,6 +1,6 @@
 label version_035:
 
-    narrator "[ VERSION 0.35 - Broken Build ]"
+    narrator "\[ VERSION 0.35 - Broken Build \]"
     pause 0.5
 
     scene bg black
@@ -46,7 +46,7 @@ label version_035:
     show minaneutralquiet at center_char
     eli "It's pitch black outside."
     hide minaneutralquiet
-    show minasmiletalk at center char
+    show minasmiletalk at center_char
     mina "Perfect baking weather."
     hide minasmiletalk
     show minaneutralquiet at center_char
