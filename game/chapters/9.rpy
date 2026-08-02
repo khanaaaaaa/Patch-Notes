@@ -80,4 +80,17 @@ label version_09:
             narrator "The developer doesn't wake up."
             narrator "You double-click the file."
 
+    stop music fadeout 2.0
+    pause 1.5
+
+    scene bg black
+    with flash_white
+
+    pause 0.1
+
+    scene bg black
+    with flash_black
+
+    pause 0.5
+
     jump the_twist

@@ -84,7 +84,7 @@ label version_035:
 
 label version_04:
 
-    narrator "[ VERSION 0.4 - Optimization ]"
+    narrator "\[ VERSION 0.4 - Optimization \]"
     pause 0.5
 
     narrator "The flower seller disappeared on a Tuesday."

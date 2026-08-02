@@ -13,6 +13,7 @@ transform bg_fit:
 transform center_char:
     xalign 0.5
     yalign 1.0
+    zoom 1.7
 
 transform left_char:
     xalign 0.15

@@ -58,7 +58,7 @@ label version_01:
 
         elif loop_count == 3:
             narrator "The third day."
-            narrator "You already know what she's going to sat."
+            narrator "You already know what she's going to say."
             show minasmiletalk at center_char
             mina "Good morning!"
             hide minasmiletalk
@@ -78,7 +78,7 @@ label version_01:
                     hide minasmiletalk
                     show minaneutralquiet at center_char
                     narrator "She tilts her head and something flickers behind her eyes."
-                    narrator "Just for a monent."
+                    narrator "Just for a moment."
                     hide minaneutralquiet
                     show minasmiletalk at center_char
                     mina "Every morning is a new morning, Eli."
@@ -90,10 +90,10 @@ label version_01:
             show minasmiletalk at center_char
             mina "Busy today?"
             hide minasmiletalk
-            show minneutralquiet at center_char
+            show minaneutralquiet at center_char
             eli "Always!"
 
-            if flitch_clicks >= 2:
+            if glitch_clicks >= 2:
                 hide minaneutralquiet
                 show minasmiletalk at center_char
                 mina "See you after the next upd-"
@@ -102,7 +102,7 @@ label version_01:
                 narrator "She stops."
                 narrator "Her mouth closes."
                 narrator "Opens again."
-                hide minaneutraltalk
+                hide minaneutralquiet
                 show minasmiletalk at center_char
                 mina "..See you tomorrow."
                 hide minasmiletalk

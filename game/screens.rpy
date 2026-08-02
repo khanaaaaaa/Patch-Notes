@@ -132,8 +132,8 @@ style namebox_label is say_label
 style window:
     xalign 0.5
     xfill True
-    yalign gui.textbox_yalign
-    ysize gui.textbox_height
+    yalign 1.0
+    ysize 278
     background Frame(Solid("#0d0a0fee"), 0, 0, 0, 0)
 
 style namebox:
@@ -142,7 +142,7 @@ style namebox:
     xsize gui.namebox_width
     ypos gui.name_ypos
     ysize gui.namebox_height
-    background Frame(Solid("#1a1020ee"), gui.namebox_borders, title=gui.namebox_title, xalign=gui.name_xalign)
+    background Frame(Solid("#1a1020ee"), gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
 
 style say_label:
@@ -265,8 +265,6 @@ screen quick_menu():
 ## the player has not explicitly hidden the interface.
 init python:
     config.overlay_screens.append("quick_menu")
-
-default quick_menu = True
 
 style quick_menu is hbox
 style quick_button is default

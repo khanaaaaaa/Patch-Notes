@@ -2,8 +2,8 @@ label version_02:
 
     narrator "\[ VERSION 0.2 - Expansion \]"
     narrator "You wake up."
-    naarator "Something is wrong."
-    naarator "Not wrong like a nightmare."
+    narrator "Something is wrong."
+    narrator "Not wrong like a nightmare."
     narrator "Wrong like a word you've read so many times that it stops looking real."
 
     scene bg town
@@ -63,7 +63,7 @@ label version_02:
     narrator "Rooms with no ceiling, just a flat grey nothing above."
 
     narrator "Children play near the edge of town."
-    narrator "Rooms with no ceiling when she sees you looking toward the unfinished area."
+    narrator "A child stops when she sees you looking toward the unfinished area."
 
     show childtalk at center_char
     child "You shouldn't go over there."
@@ -85,5 +85,6 @@ label version_02:
     narrator "You stand at the edge of the grass where the texture stops."
     narrator "You don't cross it."
     narrator "Atleast not yet."
+    hide childquiet
 
     jump version_03

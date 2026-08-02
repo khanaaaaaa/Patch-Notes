@@ -12,7 +12,7 @@ label version_03:
     show minaneutraltalk at center_char
     mina "What painting?"
     hide minaneutraltalk
-    hide minaneutralquiet at center_char
+    show minaneutralquiet at center_char
     eli "The one you've been working on for months.. the one of the valley?"
     hide minaneutralquiet
     show minasmiletalk at center_char
@@ -66,7 +66,7 @@ label version_03:
     show mayorneutralquiet at center_char
     eli "Mayor Aldric, who is this?"
     hide mayorneutralquiet
-    show mayorsmileltalk at center_char
+    show mayorsmiletalk at center_char
     mayor "Hm? Oh, that's just a stock photo that came with the frame."
     hide mayorsmiletalk
     show mayorsmilequiet at center_char

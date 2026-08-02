@@ -1,3 +1,5 @@
+default quick_menu = True
+
 label start:
 
     scene bg black

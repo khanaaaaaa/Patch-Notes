@@ -21,28 +21,28 @@ label version_05:
     show minasmiletalk at center_char
     mina "-and maybe some bread."
     hide minasmiletalk
-    show minasmilequiet at center_char
+    show minaneutralquiet at center_char
     narrator "You don't mention it."
     narrator "She doesn't know it happened."
     narrator "Then one afternoon, she says something impossible."
 
-    hide minasmilequiet
+    hide minaneutralquiet
     show minasmiletalk at center_char
     mina "Promise me something."
     hide minasmiletalk
-    show minasmilequiet at center_char
+    show minaneutralquiet at center_char
     eli "What?"
-    hide minasmilequiet
+    hide minaneutralquiet
     show minasmiletalk at center_char
     mina "Promise me.."
     hide minasmiletalk
-    show minasmilequiet at center_char
+    show minaneutralquiet at center_char
     narrator "She stops.. longer this time.. her hands go still."
-    hide minasmilequiet
-    show minasmiletalk at center_character
+    hide minaneutralquiet
+    show minasmiletalk at center_char
     mina "If I disappear..."
-    hide minasniletalk
-    show minaneytralquiet at center_char
+    hide minasmiletalk
+    show minaneutralquiet at center_char
     narrator "She looks at her hands like she doesn't recognize them."
     hide minaneutralquiet
     show minaneutraltalk at center_char

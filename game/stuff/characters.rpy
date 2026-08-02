@@ -4,3 +4,7 @@ define mayor = Character("Mayor Aldoric", color="#a0c8a0")
 define child = Character("???", color="#ffffff")
 define narrator = Character(None)
 define dev = Character("...", color="#888888")
+
+image bg black = At("images/black.png", bg_fit)
+image bg town = At("images/town.png", bg_fit)
+image bg room = At("images/room.png", bg_fit)

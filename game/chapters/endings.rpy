@@ -154,7 +154,7 @@ screen fake_desktop():
 
             text "Version 1.1 Available" color "#c8a2c8" size 24
 
-            text "New content. Stability fixes.\nMemory optimizations." color: "#6a5a6a" sze 16
+            text "New content. Stability fixes.\nMemory optimizations." color "#6a5a6a" size 16
 
             null height 6
 
@@ -190,7 +190,7 @@ label post_credits:
     pause 1.0
     narrator_nvl "Without player input."
     pause 1.5
-    narrator_nvl "Someone inside the game clicks Update"
+    narrator_nvl "Someone inside the game clicks Update."
     pause 3.0
 
     nvl clear
@@ -202,3 +202,22 @@ label post_credits:
 
     return
 
+label post_credits_skip:
+
+    scene bg black
+    with slow_fade
+
+    pause 2.0
+
+    narrator_nvl "The notification disappears."
+    pause 1.5
+    narrator_nvl "The cursor stops blinking."
+    pause 2.0
+    narrator_nvl "Nothing changes."
+    pause 2.0
+    narrator_nvl "The world stays exactly as it is."
+    pause 3.0
+
+    nvl clear
+
+    return
