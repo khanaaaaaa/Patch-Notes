@@ -1,9 +1,7 @@
 label final_choice:
 
-    narrator "The computer is still on."
-    narrator "The developer is still asleep."
-    narrator "The cursor blinks."
-    narrator "Three options on the screen."
+    narrator "The computer is still on. The developer is still asleep."
+    narrator "The cursor blinks. Three options on the screen."
 
     menu:
         "Release - The world becomes permanent, everyone left unfinished stays unfinished forever.":
@@ -24,18 +22,12 @@ label ending_release:
 
     narrator_nvl "The world locks into place."
     pause 1.0
-    narrator_nvl "Permanent."
-    pause 0.8
-    narrator_nvl "No more rewrites.."
-    pause 0.8
-    narrator_nvl "..but nothing will ever grow again."
+    narrator_nvl "No more rewrites. Nothing will ever grow again."
     pause 2.0
 
     nvl clear
 
-    narrator_nvl "The unfinished stays unfinished."
-    pause 1.5
-    narrator_nvl "Forever."
+    narrator_nvl "The unfinished stays unfinished. Forever."
     pause 2.0
 
     nvl clear
@@ -51,31 +43,18 @@ label ending_continue:
 
     narrator_nvl "Development continues."
     pause 1.0
-    narrator_nvl "New streets appear overnight."
-    narrator_nvl "New faces."
+    narrator_nvl "New streets overnight. New faces."
     pause 2.0
 
     nvl clear
 
-    narrator_nvl "And every few weeks..."
-    pause 1.5
-    narrator_nvl "...someone vanishes."
+    narrator_nvl "And every few weeks, someone vanishes."
     pause 2.0
 
     nvl clear
 
-    narrator_nvl "The world keeps changing."
-    narrator_nvl "Eli keeps his notebook."
-    pause 1.0
-    narrator_nvl "He starts a second one."
-    narrator_nvl "Then a third."
-    pause 2.0
-
-    nvl clear
-
+    narrator_nvl "Eli keeps his notebook. Then a second. Then a third."
     narrator_nvl "He is the only memory this world has."
-    pause 1.5
-    narrator_nvl "He carries all of it."
     pause 2.0
 
     nvl clear
@@ -118,7 +97,6 @@ label credits:
     nvl clear
 
     narrator_nvl "A game about creation and the cost of finishing something."
-
     narrator_nvl "Every fictional world waits for someone to press 'Update.'"
 
     pause 2.0

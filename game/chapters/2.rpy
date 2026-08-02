@@ -1,19 +1,14 @@
 label version_02:
 
     narrator "\[ VERSION 0.2 - Expansion \]"
-    narrator "You wake up."
     narrator "Something is wrong."
-    narrator "Not wrong like a nightmare."
-    narrator "Wrong like a word you've read so many times that it stops looking real."
+    narrator "Not wrong like a nightmare. Wrong like a word you've read so many times it stops looking real."
 
     scene bg town
     with dissolve
 
-    narrator "There is a river."
-    narrator "There are mountains."
-    narrator "There is a church with a bell tower."
-    narrator "There is a forest that goes on longer than it should."
-    narrator "There are people you have never seen before who wave at you like old friends."
+    narrator "There's a river now. Mountains. A church. A forest that goes on longer than it should."
+    narrator "People you've never seen wave at you like old friends."
 
     show minaneutralquiet at center_char
     eli "Has the town always had a river?"
@@ -24,9 +19,7 @@ label version_02:
     hide minasmiletalk
     show minaneutralquiet at center_char
     narrator "You don't remember."
-    narrator "But she says it so easily."
-    narrator "So naturally."
-    narrator "Like a line she's said a hundred times."
+    narrator "But she says it so easily. Like a line she's said a hundred times."
 
     menu:
         "\"Right. Of course.\"":
@@ -49,18 +42,11 @@ label version_02:
             mina "You're being strange."
             hide minasmiletalk
             show minaneutralquiet at center_char
-            narrator "She laughs."
-            narrator "And it sounds right?"
-            narrator "But practiced?"
-            narrator "You can't really tell which."
+            narrator "She laughs. It sounds right. Maybe practiced. You can't tell."
             hide minaneutralquiet
 
-    narrator "You spend the afternoon exploring."
-    narrator "The new buildings are beautiful from the outside."
-    narrator "From the inside, some of them are nothing."
-    narrator "Doors that open onto white."
-    narrator "Staircases that end mid-air."
-    narrator "Rooms with no ceiling, just a flat grey nothing above."
+    narrator "The new buildings are beautiful outside. Inside, some are nothing."
+    narrator "Doors that open onto white. Staircases that end mid-air. Rooms with no ceiling, just flat grey above."
 
     narrator "Children play near the edge of town."
     narrator "A child stops when she sees you looking toward the unfinished area."
@@ -82,9 +68,7 @@ label version_02:
     hide childtalk
     show childquiet at center_char
     narrator "She goes back to playing."
-    narrator "You stand at the edge of the grass where the texture stops."
-    narrator "You don't cross it."
-    narrator "Atleast not yet."
+    narrator "You stand where the texture stops. You don't cross it."
     hide childquiet
 
     jump version_03

@@ -366,27 +366,110 @@ screen main_menu():
     ## This ensures that any other menu screen is replaced.
     tag menu
 
-    add gui.main_menu_background
+    add Solid("#0a0810")
 
-    ## This empty frame darkens the main menu.
-    frame:
-        style "main_menu_frame"
+    add DynamicDisplayable(mm_particles)
 
-    ## The use statement includes another screen inside this one. The actual
-    ## contents of the main menu are in the navigation screen.
-    use navigation
+    add Solid("#c8a2c820") xalign 0.5 yalign 0.5 xsize 1920 ysize 1
 
-    if gui.show_name:
+    vbox:
+        xalign 0.5
+        ypos 180
+        spacing 10
 
-        vbox:
-            style "main_menu_vbox"
+        text "Patch Notes":
+            xalign 0.5
+            size 90
+            color "#c8a2c8"
+            at mm_fadein(0.0)
 
-            text "[config.name!t]":
-                style "main_menu_title"
+        text "v e r s i o n u n k n o w n":
+            xalign 0.5
+            size 22
+            color "#5a4a5a"
+            at mm_fadein(0.4)
 
-            text "[config.version]":
-                style "main_menu_version"
+    text "▸":
+        xalign 0.5
+        ypos 320
+        size 18
+        color "#c8a2c860"
+        at mm_blink
 
+    vbox:
+        xalign 0.5
+        yalign 0.6
+        spacing 28
+
+        if main_menu:
+            textbutton "start":
+                style "mm_button"
+                action Start()
+
+        textbutton "load":
+            style "mm_button"
+            action ShowMenu("load")
+        
+        textbutton "settings":
+            style "mm_button"
+            action ShowMenu("preferences")
+
+        textbutton "about":
+            style "mm_button"
+            action ShowMenu("about")
+
+        if renpy.variant("pc"):
+            textbutton "quit":
+                style "mm_button"
+                action Quit(confirm=True)
+
+    text "[config.version]":
+        xalign 1.0
+        yalign 1.0
+        xoffset -20
+        yoffset -15
+        size 16
+        color "#3a2a3a"
+
+style mm_button is default:
+    xminimum 200
+    xalign 0.5
+    background None
+    hover_background None
+    padding (0, 6)
+
+style mm_button_text is default:
+    font "DejaVuSans.ttf"
+    size 32
+    xalign 0.5
+    idle_color "#7a6a7a"
+    hover_color "#f5c842"
+    selected_color "#c8a2c8"
+
+transform mm_fadein(delay):
+    alpha 0.0
+    pause delay
+    linear 1.2 alpha 1.0
+
+transform mm_blink:
+    alpha 0.0
+    block:
+        linear 1.4 alpha 0.6
+        linear 1.4 alpha 0.0
+        repeat
+
+init python:
+    import math, random
+
+    _mm_particle_data = [(random.random(), random.random(), random.random() * 0.4 + 0.05) for _ in range(30)]
+
+    def mm_particles(st, at):
+        d = Fixed(xsize=1920, ysize=1080)
+        for (px, py, speed) in _mm_particle_data:
+            y = (py - st * speed) % 1.0
+            dot = Text("·", size=random.randint(12, 22), color="#c8a2c820")
+            d = At(dot, Transform(xpos=px, ypos=y))
+        return d, 0.05
 
 style main_menu_frame is empty
 style main_menu_vbox is vbox

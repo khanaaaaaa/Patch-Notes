@@ -6,17 +6,10 @@ label start:
     with fade
 
     narrator "You are Eli."
-    narrator "You bake bread every morning."
-    narrator "You talk to your best friend every afternoon."
-    narrator "You watch the sunset every evening."
-    narrator "You sleep."
-    narrator "You wake up."
-    narrator "You do it again."
+    narrator "Bread in the morning. Best friend in the afternoon. Sunset. Sleep. Repeat."
     pause 1.0
-    narrator "It feels like the perfect cosy game."
+    narrator "Perfect little life."
     pause 0.5
-    narrator "Except..."
-    pause 1.0
-    narrator "Sometimes the sky flickers."
+    narrator "Except the sky flickers sometimes."
 
     jump version_01

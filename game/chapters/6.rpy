@@ -15,18 +15,12 @@ label version_06:
     scene bg black
     with dissolve
 
-    narrator "You wake up."
-    narrator "Something is different."
-    narrator "The air is different."
-    narrator "The light is different."
-    narrator "The silence is different."
+    narrator "You wake up. Something is different — the air, the light, the silence."
 
     scene bg room
     with dissolve
 
-    narrator "You go to Mina's house."
-    narrator "There is no Mina's house."
-    narrator "There is a field."
+    narrator "You go to Mina's house. There is no Mina's house. There is a field."
     narrator "There has always been a field."
 
     $ show_notebook_icon = False
@@ -50,34 +44,18 @@ label version_06:
     mayor "Are you feeling alright?"
     hide mayorneutraltalk
 
-    narrator "You ask everyone."
-    narrator "The baker.. the children.. the new NPCs who appeared in version 0.2."
-    narrator "Nobody."
-    narrator "Not a flicker of recognition."
-    narrator "Not a hesitation."
-    narrator "Just blank, comfortable nothing."
+    narrator "You ask everyone. The baker, the children, the NPCs from version 0.2."
+    narrator "Nothing. Not a flicker. Just blank, comfortable nothing."
 
-    narrator "You go to the field."
-    narrator "You stand where her door used to be."
-    narrator "The grass is perfect."
-    narrator "Undisturbed."
-    narrator "Like she was never there."
+    narrator "You go to the field. Stand where her door used to be."
+    narrator "The grass is perfect. Undisturbed. Like she was never there."
 
-    narrator "Except."
-    narrator "In the grass."
-    narrator "Half-hidden."
-    narrator "A notebook."
-
-    narrator "Not yours."
-    narrator "Hers."
-
+    narrator "In the grass. Half-hidden. A notebook."
+    narrator "Not yours. Hers."
     narrator "The developer forgot to delete one prop."
 
-    narrator "You open it."
-    narrator "The first pages are full of her handwriting."
-    narrator "Notes about the versions.. about the rewrites.. about the people who disappeared."
-    narrator "About you."
-    narrator "She wrote about you."
+    narrator "The first pages are full of her handwriting — the versions, the rewrites, the people who disappeared."
+    narrator "About you. She wrote about you."
 
     narrator "The last page."
     narrator "One sentence."
@@ -85,10 +63,8 @@ label version_06:
 
     pause 2.0
 
-    narrator "You sit in the field for a long time."
-    narrator "The sun moves."
-    narrator "Nobody comes to find you."
-    narrator "Nobody knows how to."
+    narrator "You sit in the field for a long time. The sun moves."
+    narrator "Nobody comes to find you. Nobody knows how to."
 
     $ notebook_entries.append("Mina's notebook. Last line: 'If you're reading this... I lost.'")
     $ show_notebook_icon = True

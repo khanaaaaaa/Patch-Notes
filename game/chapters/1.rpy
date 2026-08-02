@@ -1,8 +1,7 @@
 label version_01:
 
     narrator "\[ VERSION 0.1 - The Prototype \]"
-    narrator "The world contains:"
-    narrator "One bakery. One road. One tree. One customer. One best friend."
+    narrator "One bakery. One road. One tree. One customer."
     narrator "Her name is Mina."
 
     $ loop_count = 0
@@ -30,13 +29,12 @@ label version_01:
             mina "See you tomorrow."
             hide minasmiletalk
             show minaneutralquiet at center_char
-            narrator "She leaves, the door closes."
-            narrator "The bell above it rings exactly twice."
-            narrator "It always rings exactly twice."
+            narrator "The door closes. The bell rings twice."
+            narrator "It always rings twice."
             hide minaneutralquiet
 
         elif loop_count == 2:
-            narrator "The next day.. identical."
+            narrator "The next day. Identical."
             show minasmiletalk at center_char
             mina "Good morning!"
             hide minasmiletalk
@@ -48,9 +46,8 @@ label version_01:
             hide minasmiletalk
             show minaneutralquiet at center_char
             eli "Always!"
-            narrator "You notice her smile doesn't quite reach her eyes today."
+            narrator "Her smile doesn't reach her eyes today."
             narrator "Or maybe it never did."
-            narrator "You can't remember."
             hide minaneutralquiet
             show minasmiletalk at center_char
             mina "See you tomorrow."
@@ -77,8 +74,7 @@ label version_01:
                     mina "What do you mean?"
                     hide minasmiletalk
                     show minaneutralquiet at center_char
-                    narrator "She tilts her head and something flickers behind her eyes."
-                    narrator "Just for a moment."
+                    narrator "She tilts her head. Something flickers behind her eyes."
                     hide minaneutralquiet
                     show minasmiletalk at center_char
                     mina "Every morning is a new morning, Eli."
@@ -99,17 +95,13 @@ label version_01:
                 mina "See you after the next upd-"
                 hide minasmiletalk
                 show minaneutralquiet at center_char
-                narrator "She stops."
-                narrator "Her mouth closes."
-                narrator "Opens again."
+                narrator "She stops. Mouth closes. Opens again."
                 hide minaneutralquiet
                 show minasmiletalk at center_char
                 mina "..See you tomorrow."
                 hide minasmiletalk
                 show minaneutralquiet at center_char
-                narrator "She blinks twice, and corrects herself."
-                narrator "The bell rings twice twice."
-                narrator "You stand very still."
+                narrator "The bell rings twice. You don't move."
                 narrator "You don't know why your hands are shaking."
                 hide minaneutralquiet
             else:

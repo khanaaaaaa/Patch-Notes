@@ -10,24 +10,16 @@ label version_035:
     narrator "Something in the world itself breaks."
 
     narrator "It rains inside the bakery."
-    narrator "Not through the ceiling."
-    narrator "Just... inside."
-    narrator "Falling from nothing."
-    narrator "The bread gets wet."
-    narrator "You stand in indoor rain and don't know what to do."
+    narrator "Not through the ceiling. Just inside. Falling from nothing."
+    narrator "The bread gets wet. You stand there and don't know what to do."
 
-    narrator "A tree outside your window is floating."
-    narrator "Three feet off the ground."
-    narrator "Rotating slowly."
+    narrator "A tree outside your window is floating three feet off the ground, rotating slowly."
     narrator "Nobody mentions it."
 
     narrator "You see the flower seller walk through a wall."
     narrator "She comes out the other side still talking about her roses."
 
-    narrator "Time skips."
-    narrator "You are eating breakfast."
-    narrator "Then you are watching the sunset."
-    narrator "You don't remember the hours between."
+    narrator "Time skips. Breakfast. Then sunset. You don't remember the hours between."
 
     narrator "One morning, the sun doesn't rise."
     narrator "It stays dark."
@@ -61,8 +53,7 @@ label version_035:
             mina "I'm always okay."
             hide minasmiletalk
             show minaneutralquiet at center_char
-            narrator "She says it like a fact."
-            narrator "Like something she was told to say."
+    narrator "She says it like a fact. Like something she was told to say."
             hide minaneutralquiet
             $ mina_trust += 1
         "\"Do you notice anything wrong with the sky?\"":
@@ -88,8 +79,7 @@ label version_04:
     pause 0.5
 
     narrator "The flower seller disappeared on a Tuesday."
-    narrator "You notice because you bought roses from her every week."
-    narrator "For no reason. Just because they were there."
+    narrator "You bought roses from her every week. For no reason. Just because they were there."
 
     show minaneutralquiet at center_char
     eli "Where's the flower seller?"
@@ -110,15 +100,11 @@ label version_04:
     mina "Eli, there's no one by that name in Maple Crossing."
     hide minaneutraltalk
 
-    narrator "You check your notebook."
-    narrator "There is a page that says PETRA - red hair - extra stem - Tuesday roses."
-    narrator "The ink is faded."
-    narrator "Getting fainter as you watch."
+    narrator "You check your notebook. A page reads: PETRA - red hair - extra stem - Tuesday roses."
+    narrator "The ink is fading. Getting fainter as you watch."
 
-    narrator "The librarian disappears on a Thursday."
-    narrator "His name was Mr. Voss."
-    narrator "He recommended books. He remembered what you liked."
-    narrator "He had a cat that slept on the returns desk."
+    narrator "The librarian disappeared on a Thursday. His name was Mr. Voss."
+    narrator "He recommended books. Remembered what you liked. Had a cat that slept on the returns desk."
 
     show mayorsmilequiet at center_char
     eli "What happened to Mr. Voss?"
@@ -132,14 +118,10 @@ label version_04:
     show mayorsmiletalk at center_char
     mayor "Libraries don't allow animals."
     hide mayorsmiletalk 
-    narrator "The cat is gone too."
-    narrator "There is a dent in the cushion on the returns desk."
+    narrator "The cat is gone too. There's a dent in the cushion on the returns desk."
     narrator "The shape of something small that used to sleep there."
 
-    narrator "You start hearing it at night."
-    narrator "Not a voice exactly."
-    narrator "More like a system sound."
-    narrator "Low. Flat. Final."
+    narrator "You start hearing it at night. Not a voice. More like a system sound. Low. Flat. Final."
     narrator "\"Optimization complete.\""
     narrator "\"Optimization complete.\""
     narrator "\"Optimization complete.\""

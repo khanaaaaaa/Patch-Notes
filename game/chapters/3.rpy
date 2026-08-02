@@ -2,9 +2,7 @@ label version_03:
 
     narrator "\[ VERSION 0.3 - Rewrites \]"
     pause 0.5
-
-    narrator "It starts small."
-    narrator "The kind of thing you could explain away."
+    narrator "It starts small. The kind of thing you could explain away."
 
     show minaneutralquiet at center_char
     eli "Mina, how's the painting going?"
@@ -26,8 +24,7 @@ label version_03:
     hide minasmiletalk
     show minaneutralquiet at center_char
     narrator "She wrinkles her nose in genuine distaste."
-    narrator "You've seen that expression before."
-    narrator "When she made a mistake on a canvas and laughed about it."
+    narrator "You've seen that expression before — when she made a mistake on a canvas and laughed."
     narrator "When she showed you the valley painting and asked if the light looked right."
 
     menu:
@@ -54,14 +51,10 @@ label version_03:
             mina "That's not me."
             hide minaneutraltalk
             show minaneutralquiet at center_char
-            narrator "She hands the phone back, her hands steady."
-            narrator "Yours isn't."
+            narrator "She hands the phone back. Her hands are steady. Yours aren't."
             hide minaneutralquiet
 
-    narrator "You visit the mayor."
-    narrator "There is a photo on his desk."
-    narrator "A wedding photo."
-    narrator "He is younger.. smiling.. with a woman beside him."
+    narrator "You visit the mayor. There's a photo on his desk — a wedding photo. He's younger, smiling, with a woman beside him."
 
     show mayorneutralquiet at center_char
     eli "Mayor Aldric, who is this?"
@@ -77,16 +70,12 @@ label version_03:
     hide mayorsmiletalk
     show mayorneutralquiet at center_char
     narrator "He says it without blinking."
-    narrator "You look at the photo again."
-    narrator "The woman is gone."
-    narrator "It's just him now... smiling alone."
+    narrator "You look at the photo again. The woman is gone. Just him now, smiling alone."
     hide mayorneutralquiet
 
-    narrator "That night you start a notebook."
-    narrator "You write down everything you remember."
-    narrator "Mina's painting, the mayor's wife, and the river that appeared overnight."
-    narrator "You fall asleep with the pen in your hand."
-    narrator "In the morning, three pages are blank."
+    narrator "That night you start a notebook. Everything you remember."
+    narrator "Mina's painting. The mayor's wife. The river."
+    narrator "You fall asleep with the pen in your hand. In the morning, three pages are blank."
 
     $ notebook_entries.append("Mina used to love painting especially scenary. She laughed especially when she made mistakes.")
     $ notebook_entries.append("Mayor Aldric had a wife, she was in the wedding photo. Then she suddenly wasn't.")
