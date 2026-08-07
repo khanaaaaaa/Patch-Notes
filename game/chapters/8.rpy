@@ -27,8 +27,8 @@ label version_08:
     mina "Temporary solution - will address in next build."
     narrator "She walks away. You follow. She turns a corner. She's gone."
 
-    $ notebook_entries.append("Clara. The mayor's wife. Her name was Clara.")
-    $ notebook_entries.append("Mina appeared in the bakery. Said commit messages. Eyes were wrong.")
+    $ notebook_entries.append("clara. the mayor said her name. 'clara always said the morning light was something special.' then caught himself. her name was clara.")
+    $ notebook_entries.append("mina was in the bakery doorway. said 'merge conflict.' 'fixed memory leak.' eyes were wrong. not her.")
     $ show_notebook_icon = True
 
     jump version_09

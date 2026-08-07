@@ -132,8 +132,8 @@ label version_04:
     narrator "\"Optimization complete.\""
     narrator "\"Optimization complete.\""
 
-    $ notebook_entries.append("Petra the flower seller. Removed Tuesday. Red hair. Extra stem.")
-    $ notebook_entries.append("Mr. Voss the librarian. Removed Thursday. Had a cat. Cat also gone.")
+    $ notebook_entries.append("Petra. flower stall. red hair, always gave me an extra stem on tuesdays. gone tuesday. nobody remembers her name.")
+    $ notebook_entries.append("mr voss - library. had a cat, grey, slept on the returns desk. both gone thursday. there's still a dent in the cushion.")
     $ show_notebook_icon = True
 
     jump version_05

@@ -69,7 +69,7 @@ label version_06:
     narrator "You sit in the field for a long time. The sun moves."
     narrator "Nobody comes to find you. Nobody knows how to."
 
-    $ notebook_entries.append("Mina's notebook. Last line: 'If you're reading this... I lost.'")
+    $ notebook_entries.append("mina's notebook. found it in the field where her house was. last page just says 'if you're reading this... i lost.'")
     $ show_notebook_icon = True
 
     jump version_07

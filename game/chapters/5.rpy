@@ -147,7 +147,7 @@ label version_05:
     mina "It's locked."
     hide minaneutraltalk
 
-    $ notebook_entries.append("Mina remembers everything. She found the ROOT door past the invisible walls.")
+    $ notebook_entries.append("Mina remembers. all of it. she's been pretending not to. found something past the edge - white room, debug stuff, a door.")
     $ chose_to_remember = True
     $ show_notebook_icon = True
 

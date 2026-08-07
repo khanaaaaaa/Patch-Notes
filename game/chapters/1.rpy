@@ -12,82 +12,81 @@ label version_01:
 
         if loop_count == 1:
             scene bg town
-            narrator "She arrives at exactly the same time she always does."
+            narrator "She arrives at the same time she always does. You've never checked a clock to confirm this. You just know."
             show minasmiletalk at center_char
-            mina "Good morning!"
+            mina "Morning!"
             hide minasmiletalk
             show minaneutralquiet at center_char
-            eli "Morning!"
+            eli "Morning."
             hide minaneutralquiet
             show minasmiletalk at center_char
-            mina "Busy today?"
+            mina "Busy?"
             hide minasmiletalk
             show minaneutralquiet at center_char
-            eli "Always!"
+            eli "When am I not."
             hide minaneutralquiet
             show minasmiletalk at center_char
             mina "See you tomorrow."
             hide minasmiletalk
             show minaneutralquiet at center_char
-            narrator "The door closes. The bell rings twice."
-            narrator "It always rings twice."
+            narrator "The door. The bell. Twice."
+            narrator "You count without meaning to."
             hide minaneutralquiet
 
         elif loop_count == 2:
-            narrator "The next day. Identical."
+            narrator "The next day arrives the way the next day always does — without asking."
             show minasmiletalk at center_char
-            mina "Good morning!"
+            mina "Morning!"
             hide minasmiletalk
             show minaneutralquiet at center_char
-            eli "Morning!"
+            eli "Morning."
             hide minaneutralquiet
             show minasmiletalk at center_char
-            mina "Busy today?"
+            mina "Busy?"
             hide minasmiletalk
             show minaneutralquiet at center_char
-            eli "Always!"
-            narrator "Her smile doesn't reach her eyes today."
-            narrator "Or maybe it never did."
+            eli "When am I not."
+            narrator "Something about her smile is off. Not wrong, exactly. More like a copy of itself."
             hide minaneutralquiet
             show minasmiletalk at center_char
             mina "See you tomorrow."
             hide minasmiletalk
 
         elif loop_count == 3:
-            narrator "The third day."
-            narrator "You already know what she's going to say."
+            narrator "By the third day you know the shape of it before it starts."
+            narrator "You open your mouth before she does."
             show minasmiletalk at center_char
-            mina "Good morning!"
+            mina "Morning!"
             hide minasmiletalk
             show minaneutralquiet at center_char
 
             menu:
-                "Morning!":
-                    eli "Morning!"
+                "Morning.":
+                    eli "Morning."
                     $ glitch_clicks += 1
-                "..Do you ever feel like we've had this conversation before?":
+                "..Have we done this before?":
                     $ glitch_clicks += 2
                     $ eli_awareness += 1
-                    eli "..Do you ever feel like we've had this conversation before?"
+                    eli "Have we done this before?"
                     hide minaneutralquiet
                     show minasmiletalk at center_char
-                    mina "What do you mean?"
+                    mina "Done what?"
                     hide minasmiletalk
                     show minaneutralquiet at center_char
-                    narrator "She tilts her head. Something flickers behind her eyes."
+                    narrator "She tilts her head. There's a half-second where her face does nothing at all."
                     hide minaneutralquiet
                     show minasmiletalk at center_char
                     mina "Every morning is a new morning, Eli."
                     hide minasmiletalk
                     show minaneutralquiet at center_char
-                    narrator "She says it like she's reading it."
-            
+                    narrator "The words are right. The cadence is wrong. Like she learned the sentence phonetically."
+
             hide minaneutralquiet
             show minasmiletalk at center_char
-            mina "Busy today?"
+            mina "Busy?"
             hide minasmiletalk
             show minaneutralquiet at center_char
-            eli "Always!"
+            eli "When am I not."
 
             if glitch_clicks >= 2:
                 hide minaneutralquiet
@@ -95,14 +94,14 @@ label version_01:
                 mina "See you after the next upd-"
                 hide minasmiletalk
                 show minaneutralquiet at center_char
-                narrator "She stops. Mouth closes. Opens again."
+                narrator "She stops mid-word. Her mouth stays open a moment, like she's listening for something."
                 hide minaneutralquiet
                 show minasmiletalk at center_char
                 mina "..See you tomorrow."
                 hide minasmiletalk
                 show minaneutralquiet at center_char
                 narrator "The bell rings twice. You don't move."
-                narrator "You don't know why your hands are shaking."
+                narrator "Your hands are shaking and you have no idea why."
                 hide minaneutralquiet
             else:
                 hide minaneutralquiet

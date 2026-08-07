@@ -77,9 +77,9 @@ label version_03:
     narrator "Mina's painting. The mayor's wife. The river."
     narrator "You fall asleep with the pen in your hand. In the morning, three pages are blank."
 
-    $ notebook_entries.append("Mina used to love painting especially scenary. She laughed especially when she made mistakes.")
-    $ notebook_entries.append("Mayor Aldric had a wife, she was in the wedding photo. Then she suddenly wasn't.")
-    $ notebook_entries.append("The river appeared overnight, and everyone acts like it was already there.")
+    $ notebook_entries.append("Mina - painting. valley scene, worked on it for months. she laughed when the light looked wrong. she KNOWS that painting.")
+    $ notebook_entries.append("mayor's wife - was in the photo on his desk. then she wasn't. he didn't even blink.")
+    $ notebook_entries.append("the river. it wasn't there. now it was always there. nobody thinks this is strange.")
     $ show_notebook_icon = True
 
     jump version_035

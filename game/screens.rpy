@@ -1,4 +1,4 @@
-﻿################################################################################
+################################################################################
 ## Initialization
 ################################################################################
 
@@ -389,7 +389,7 @@ screen main_menu():
             color "#5a4a5a"
             at mm_fadein(0.4)
 
-    text "▸":
+    text "?":
         xalign 0.5
         ypos 320
         size 18
@@ -439,7 +439,7 @@ style mm_button is default:
     padding (0, 6)
 
 style mm_button_text is default:
-    font "DejaVuSans.ttf"
+    font "gui/fonts/Aller_Lt.ttf"
     size 32
     xalign 0.5
     idle_color "#7a6a7a"
@@ -467,7 +467,7 @@ init python:
         d = Fixed(xsize=1920, ysize=1080)
         for (px, py, speed) in _mm_particle_data:
             y = (py - st * speed) % 1.0
-            dot = Text("·", size=random.randint(12, 22), color="#c8a2c820")
+            dot = Text("�", size=random.randint(12, 22), color="#c8a2c820")
             d = At(dot, Transform(xpos=px, ypos=y))
         return d, 0.05
 
@@ -1316,9 +1316,9 @@ screen skip_indicator():
 
             text _("Skipping")
 
-            text "▸" at delayed_blink(0.0, 1.0) style "skip_triangle"
-            text "▸" at delayed_blink(0.2, 1.0) style "skip_triangle"
-            text "▸" at delayed_blink(0.4, 1.0) style "skip_triangle"
+            text "?" at delayed_blink(0.0, 1.0) style "skip_triangle"
+            text "?" at delayed_blink(0.2, 1.0) style "skip_triangle"
+            text "?" at delayed_blink(0.4, 1.0) style "skip_triangle"
 
 
 ## This transform is used to blink the arrows one after another.
@@ -1350,7 +1350,7 @@ style skip_text:
 style skip_triangle:
     ## We have to use a font that has the BLACK RIGHT-POINTING SMALL TRIANGLE
     ## glyph in it.
-    font "DejaVuSans.ttf"
+    font "gui/fonts/Aller_Lt.ttf"
 
 
 ## Notify screen ###############################################################
@@ -1733,41 +1733,52 @@ screen notebook_screen():
     modal True
     zorder 100
 
-    add Solid("#000000cc")
+    add Solid("#00000088")
 
     frame:
         xalign 0.5
         yalign 0.5
-        xsize 600
+        xsize 540
         ysize 500
-        background "#1a1a1aff"
-        padding (30, 30)
+        background "#f7f3ed"
+        padding (48, 40)
 
         vbox:
-            spacing 15
+            spacing 24
 
-            text "Eli's Notebook" color "#f5c842" size 28 xalign 0.5
+            text "eli's notebook":
+                color "#3a3028"
+                size 20
+                xalign 0.0
 
-            null height 10
+            add Solid("#c8b89870") ysize 1 xsize 444
 
             if len(notebook_entries) == 0:
-                text "Nothing written yet." color "#aaaaaa" size 18
+                text "nothing yet.":
+                    color "#a09080"
+                    size 17
             else:
                 viewport:
                     scrollbars "vertical"
                     mousewheel True
-                    ysize 350
+                    ysize 340
+                    xsize 444
                     vbox:
-                        spacing 20
+                        spacing 22
                         for entry in notebook_entries:
-                            text "- [entry]" color "#dddddd" size 17
+                            text "[entry]":
+                                color "#3a3028"
+                                size 17
+                                line_spacing 5
 
-            null height 10
-
-            textbutton "Close":
-                xalign 0.5
+            textbutton "close":
+                xalign 0.0
                 action Hide("notebook_screen")
-                text_color "#c8a2c8"
+                text_color "#a09080"
+                text_hover_color "#3a3028"
+                text_size 16
+                background None
+                hover_background None
 
 init python:
     config.overlay_screens.append("notebook_icon")
