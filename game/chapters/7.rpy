@@ -2,23 +2,25 @@ label version_07:
 
     narrator "\[ VERSION 0.7 - Ambition \]"
     pause 0.5
-    narrator "You can feel it happening — more content, more systems, more scope."
+    narrator "You can feel the developer wanting more. The world strains at the seams of what it was."
 
-    narrator "Half the town wakes up with swords. Not metaphorically. Actual swords."
-    narrator "The baker has one. The mayor has one. The children have small ones."
+    narrator "Half the town wakes up with swords. Not ceremonial. Not decorative. Actual swords, worn like they've always had them."
+    narrator "The baker's is propped against the bread rack. The mayor's is on his desk where the wedding photo used to be."
+    narrator "The children have small ones. They seem pleased about this."
 
-    narrator "They talk about monsters. Creatures in the forest, dungeons beneath the church."
-    narrator "A great evil approaching from the East."
+    narrator "Everyone talks about a darkness coming from the East."
+    narrator "Creatures in the forest. Dungeons under the church."
 
     eli "What's in the forest?"
-    narrator "A villager grips his sword.. stares at the treeline."
-    narrator "\"Something's coming. It just hasn't been added yet.\""
+    narrator "A man you don't recognise grips his sword and stares at the treeline."
+    narrator "\"Something. It just hasn't arrived yet.\""
 
-    narrator "Quest markers appear in the sky — floating yellow diamonds pointing at empty fields."
-    narrator "You follow one. Patch of grass. Nothing there. The marker pulses. Waiting."
+    narrator "Yellow quest markers hang in the sky like punctuation for a sentence nobody wrote."
+    narrator "You follow one to a field. Stand there. The marker pulses above you, patient."
+    narrator "There is nothing here. There has never been anything here. The game is making promises it hasn't kept yet."
 
-    narrator "The other half still acts like a cozy village. The empty stall, the library with no librarian."
-    narrator "Two realities in the same space. Neither noticing the other."
+    narrator "The other half of town hasn't changed. The empty flower stall. The library with its dented cushion."
+    narrator "Two versions of the same place, occupying the same coordinates, neither aware of the other."
 
     scene bg library
     with dissolve
@@ -27,19 +29,18 @@ label version_07:
         "Follow the quest markers.":
             scene bg town
             with dissolve
-            narrator "You follow every marker."
-            narrator "Every single one leads to nothing."
-            narrator "The game is promising things it hasn't built yet."
+            narrator "You follow every single one."
+            narrator "Fields. Empty lots. A cave entrance with nothing inside."
+            narrator "The game is a list of intentions."
             $ eli_awareness += 1
-        "Go back to the field where Mina's house was.":
+        "Go back to the field.":
             scene bg field
             with dissolve
-            narrator "You go back to the field."
-            narrator "You sit with her notebook."
-            narrator "You read it again."
-            narrator "You read the parts she wrote about you."
-            narrator "She wrote that you were the only one who made the loop feel different."
-            narrator "You didn't know she noticed."
+            narrator "You sit with her notebook again."
+            narrator "You find the pages she wrote about you near the back."
+            narrator "She wrote that you were the only one who ever seemed to notice the loop."
+            narrator "That it made the days feel different, even when they weren't."
+            narrator "You didn't know she'd been watching."
             $ mina_trust += 1
 
     jump version_08

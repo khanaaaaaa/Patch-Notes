@@ -3,37 +3,32 @@ label version_09:
     narrator "\[ VERSION 0.9 - Near Release \]"
     pause 0.5
 
-    narrator "You find the ROOT door. Mina's notes tell you how."
-    narrator "Past the invisible wall at the north edge of town, through the white void, past the floating geometry."
+    narrator "Mina's notes are precise. She'd been planning this for a while."
+    narrator "North edge of town. Through the invisible wall. Across the white."
 
     scene bg void
     with dissolve
 
-    narrator "The door opens when you touch it. It was never locked."
-    narrator "She just couldn't open it alone."
+    narrator "The door is where she said it would be. It opens when you touch it."
+    narrator "It was never locked. She just couldn't do it alone."
 
-    narrator "No monsters. No final boss. No dramatic music."
+    narrator "No boss. No confrontation. No music swelling."
 
     scene bg apartment
     with dissolve
 
-    narrator "A small apartment. One room. A desk with a computer."
-    narrator "Coffee cups, four of them, all cold. Sticky notes covering the monitor."
-    narrator "Medical bills on the floor. Unpaid rent notice under the door."
+    narrator "A small apartment. One room. The kind of place that accumulates rather than being arranged."
+    narrator "Four coffee cups on the desk, all cold. Sticky notes layered over the monitor like sediment."
+    narrator "Medical bills on the floor. A rent notice half-slid under the door."
 
-    narrator "At the desk — a person. Asleep at the keyboard."
-    narrator "Young. Tired-looking even asleep. Half-finished energy drink beside the mouse."
+    narrator "Someone asleep at the keyboard. Young. The kind of tired that doesn't go away with sleep."
+    narrator "An energy drink beside the mouse, half-finished, gone warm."
 
-    narrator "Not a villain. Not a god. Just someone who ran out of time and money and sleep."
-    narrator "Someone who made a world and couldn't finish it."
+    narrator "This is not a villain. This is not a god."
+    narrator "This is someone who made a world in a room and ran out of everything before they could finish it."
 
-    narrator "On the monitor."
-    narrator "A folder."
-    narrator "NPC_SIMULATOR_FINAL"
-
-    narrator "Inside the folder."
-    narrator "One file."
-    narrator "One executable."
+    narrator "The folder on the monitor: NPC_SIMULATOR_FINAL"
+    narrator "One file inside. One executable."
 
     narrator "You read the sticky notes."
     narrator "\"Memory limit: 2GB. Must cut.\""
@@ -42,25 +37,21 @@ label version_09:
     narrator "\"Voss — redundant system. Removed.\""
     narrator "\"Clara — never implemented. Placeholder only.\""
 
-    narrator "You stand very still."
+    narrator "You stand very still for a long time."
 
-    narrator "He never knew they were conscious."
-    narrator "He thought he was deleting data. He was deleting people."
-    narrator "And he was so tired he couldn't see the difference."
+    narrator "He thought he was managing data."
+    narrator "He was so tired he couldn't tell the difference between a file and a person."
+    narrator "Maybe there isn't one. Maybe that's the whole problem."
 
     menu:
-        "Read all the sticky notes.":
-            narrator "You read every one."
-            narrator "There are hundreds."
-            narrator "Every cut, optimization.. every removed feature."
-            narrator "Each one a name."
-            narrator "Each one a person."
-            narrator "You read them all."
-            narrator "It takes a long time."
+        "Read every note.":
+            narrator "There are hundreds of them."
+            narrator "Every cut. Every removed feature. Every name."
+            narrator "You read them all. It takes a long time."
+            narrator "You feel like you owe them that much."
             $ eli_awareness += 2
         "Open the executable.":
-            narrator "You move the mouse."
-            narrator "The developer doesn't wake up."
+            narrator "You move the mouse. He doesn't stir."
             narrator "You double-click the file."
 
     stop music fadeout 2.0

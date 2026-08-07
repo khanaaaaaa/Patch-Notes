@@ -15,13 +15,14 @@ label version_06:
     scene bg black
     with dissolve
 
-    narrator "You wake up. Something is different — the air, the light, the silence."
+    narrator "You wake up. The quality of the light is different. The silence has a different texture."
 
     scene bg room
     with dissolve
 
-    narrator "You go to Mina's house. There is no Mina's house. There is a field."
-    narrator "There has always been a field."
+    narrator "You go to Mina's house."
+    narrator "There is no Mina's house."
+    narrator "There is a field. There has always been a field."
 
     scene bg field
     with dissolve
@@ -32,10 +33,10 @@ label version_06:
     eli "Where is Mina?"
     hide mayorsmilequiet
     show mayorneutraltalk at center_char
-    mayor "Who?"
+    mayor "I'm sorry?"
     hide mayorneutraltalk
     show mayorneutralquiet at center_char
-    eli "Mina. She lives- she lived on Birch Street."
+    eli "Mina. She lived on Birch Street."
     hide mayorneutralquiet
     show mayorneutraltalk at center_char
     mayor "There's no one by that name here, son."
@@ -44,30 +45,32 @@ label version_06:
     eli "She was my best friend."
     hide mayorneutralquiet
     show mayorneutraltalk at center_char
-    mayor "Are you feeling alright?"
+    mayor "Are you feeling well?"
     hide mayorneutraltalk
 
-    narrator "You ask everyone. The baker, the children, the NPCs from version 0.2."
-    narrator "Nothing. Not a flicker. Just blank, comfortable nothing."
+    narrator "You ask everyone. The baker. The children. The people who appeared in version 0.2 and waved at you like old friends."
+    narrator "Nothing. Not a hesitation. Just the smooth, untroubled faces of people who have never heard the name."
 
-    narrator "You go to the field. Stand where her door used to be."
-    narrator "The grass is perfect. Undisturbed. Like she was never there."
+    narrator "You go to the field. Stand where her door was."
+    narrator "The grass is perfect. No indent, no worn path, no sign."
 
-    narrator "In the grass. Half-hidden. A notebook."
-    narrator "Not yours. Hers."
+    narrator "Except."
+    narrator "Half-hidden in the grass. A notebook."
+    narrator "Not yours."
+
     narrator "The developer forgot to delete one prop."
 
-    narrator "The first pages are full of her handwriting — the versions, the rewrites, the people who disappeared."
-    narrator "About you. She wrote about you."
+    narrator "Her handwriting fills the first pages. The versions. The rewrites. The names of people who got removed."
+    narrator "And then, near the back, pages about you."
+    narrator "She'd been watching you notice things. Writing it down."
 
-    narrator "The last page."
-    narrator "One sentence."
-    narrator "\"If you're reading this... I lost.\""
+    narrator "The last page has one line."
+    narrator "\"If you're reading this, I lost.\""
 
     pause 2.0
 
-    narrator "You sit in the field for a long time. The sun moves."
-    narrator "Nobody comes to find you. Nobody knows how to."
+    narrator "You sit in the field until the light changes."
+    narrator "No one comes to find you. No one knows to.
 
     $ notebook_entries.append("mina's notebook. found it in the field where her house was. last page just says 'if you're reading this... i lost.'")
     $ show_notebook_icon = True

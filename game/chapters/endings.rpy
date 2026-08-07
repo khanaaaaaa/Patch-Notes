@@ -1,7 +1,7 @@
 label final_choice:
 
-    narrator "The computer is still on. The developer is still asleep."
-    narrator "The cursor blinks. Three options on the screen."
+    narrator "The cursor blinks. He's still asleep. Three options on the screen."
+    narrator "You're the one who has to choose."
 
     menu:
         "Release - The world becomes permanent, everyone left unfinished stays unfinished forever.":
@@ -20,14 +20,15 @@ label ending_release:
 
     nvl clear
 
-    narrator_nvl "The world locks into place."
+    narrator_nvl "The world stops changing."
     pause 1.0
-    narrator_nvl "No more rewrites. Nothing will ever grow again."
+    narrator_nvl "Everything that was left unfinished stays that way. Permanently."
+    narrator_nvl "No more rewrites. No more additions. No more loss."
     pause 2.0
 
     nvl clear
 
-    narrator_nvl "The unfinished stays unfinished. Forever."
+    narrator_nvl "It's a kind of peace. The kind that comes from giving up on growth."
     pause 2.0
 
     nvl clear
@@ -43,18 +44,19 @@ label ending_continue:
 
     narrator_nvl "Development continues."
     pause 1.0
-    narrator_nvl "New streets overnight. New faces."
+    narrator_nvl "New streets by morning. New faces who wave like they've always known you."
     pause 2.0
 
     nvl clear
 
-    narrator_nvl "And every few weeks, someone vanishes."
+    narrator_nvl "And every few weeks, quietly, someone is gone."
     pause 2.0
 
     nvl clear
 
-    narrator_nvl "Eli keeps his notebook. Then a second. Then a third."
-    narrator_nvl "He is the only memory this world has."
+    narrator_nvl "Eli fills notebook after notebook. He becomes the only continuous memory this world has."
+    narrator_nvl "He carries everyone who was removed."
+    narrator_nvl "It's a heavy thing to be the only one who remembers."
     pause 2.0
 
     nvl clear
@@ -96,8 +98,8 @@ label credits:
 
     nvl clear
 
-    narrator_nvl "A game about creation and the cost of finishing something."
-    narrator_nvl "Every fictional world waits for someone to press 'Update.'"
+    narrator_nvl "Every world someone builds is full of people they had to cut."
+    narrator_nvl "Every finished thing is a graveyard of what it almost was."
 
     pause 2.0
 
@@ -164,16 +166,16 @@ label post_credits:
 
     nvl clear
 
-    narrator_nvl "The menu opens by itself."
+    narrator_nvl "The menu opens on its own."
     pause 1.0
-    narrator_nvl "Without player input."
+    narrator_nvl "No input. No one at the keyboard."
     pause 1.5
-    narrator_nvl "Someone inside the game clicks Update."
+    narrator_nvl "Something inside the game pressed Update."
     pause 3.0
 
     nvl clear
 
-    narrator_nvl "\"Every fictional world waits for someone to press 'Update.'\""
+    narrator_nvl "Every world someone builds is full of people they had to cut."
     pause 4.0
 
     nvl clear
@@ -187,13 +189,13 @@ label post_credits_skip:
 
     pause 2.0
 
-    narrator_nvl "The notification disappears."
+    narrator_nvl "The notification closes."
     pause 1.5
-    narrator_nvl "The cursor stops blinking."
-    pause 2.0
-    narrator_nvl "Nothing changes."
+    narrator_nvl "The cursor stops."
     pause 2.0
     narrator_nvl "The world stays exactly as it is."
+    pause 2.0
+    narrator_nvl "Which is, depending on how you look at it, either the saddest or the kindest outcome."
     pause 3.0
 
     nvl clear

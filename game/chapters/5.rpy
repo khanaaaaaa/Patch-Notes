@@ -3,148 +3,142 @@ label version_05:
     narrator "\[ VERSION 0.5 - Feature Cut \]"
     pause 0.5
 
-    narrator "Mina starts glitching. That's the only word for it."
+    narrator "Mina starts doing something she doesn't know she's doing."
 
-    narrator "Mid-sentence, she just stops. Eyes open, breathing, but not there."
-    narrator "Then she continues like nothing happened."
+    narrator "Mid-sentence, she stops. Eyes open, breathing, present in every physical sense."
+    narrator "Then she picks up exactly where she left off, like a record that skipped."
 
     show minaneutraltalk at center_char
     mina "I was thinking we could go to the river later and-"
     hide minaneutraltalk
     show minaneutralquiet at center_char
-    narrator "She stops."
-    narrator "Three seconds."
+    narrator "Three seconds. Maybe four."
     hide minaneutralquiet
     show minasmiletalk at center_char
-    mina "-and maybe some bread."
+    mina "-get some bread on the way back."
     hide minasmiletalk
     show minaneutralquiet at center_char
-    narrator "You don't mention it. She doesn't know it happened."
-    narrator "Then one afternoon she says something impossible."
+    narrator "You don't say anything. There's nothing to say that wouldn't sound like an accusation."
+    narrator "Then one afternoon she looks at her hands mid-conversation and says:"
 
     hide minaneutralquiet
     show minasmiletalk at center_char
     mina "Promise me something."
     hide minasmiletalk
     show minaneutralquiet at center_char
-    eli "What?"
+    eli "Depends what it is."
     hide minaneutralquiet
     show minasmiletalk at center_char
-    mina "Promise me.."
+    mina "Promise me first."
     hide minasmiletalk
     show minaneutralquiet at center_char
-    narrator "She stops.. longer this time.. her hands go still."
+    narrator "She stops. Her hands go still in her lap."
     hide minaneutralquiet
     show minasmiletalk at center_char
     mina "If I disappear..."
     hide minasmiletalk
     show minaneutralquiet at center_char
-    narrator "She looks at her hands like she doesn't recognize them."
+    narrator "She's looking at her hands like she's never seen them before."
     hide minaneutralquiet
     show minaneutraltalk at center_char
-    mina "...don't let them optimize you."
+    mina "...don't let them make you smaller."
     hide minaneutraltalk
     show minaneutralquiet at center_char
-    narrator "Then she blinks."
+    narrator "Then she blinks. Comes back."
     hide minaneutralquiet
     show minaneutraltalk at center_char
-    mina "Sorry, what was I saying?"
+    mina "Sorry — what was I saying?"
     hide minaneutraltalk
     show minaneutralquiet at center_char
-    eli "You were talking about the river."
+    eli "The river."
     hide minaneutralquiet
     show minaneutraltalk at center_char
-    mina "Right, the river. Do you want to go?"
+    mina "Right. Do you want to?"
     hide minaneutraltalk
     show minaneutralquiet at center_char
 
     menu:
-        "Go to the river.. don't mention it.":
-            narrator "You go to the river."
-            narrator "You skip stones."
-            narrator "She laughs when yours goes further than hers."
-            narrator "You memorize the sound."
+        "Go. Don't bring it up.":
+            narrator "You go. You skip stones. She wins, which she always does, and laughs about it in a way that sounds like her."
+            narrator "You try to hold the sound of it somewhere it won't fade."
             $ mina_trust += 1
-        "\"Mina.. you said something about disappearing\"":
+        "\"You said something about disappearing.\"":
             $ eli_awareness += 1
-            eli "Mina.. you said something about disappearing."
+            eli "You said something. About disappearing."
             hide minaneutralquiet
             show minaneutraltalk at center_char
-            mina "I don't know what you mean."
+            mina "I don't think I did."
             hide minaneutraltalk
             show minaneutralquiet at center_char
-            eli "You said 'if I disappear, don't let them optimize you.'"
+            eli "'Don't let them make you smaller.' Those were your words."
             hide minaneutralquiet
             show minaneutraltalk at center_char
-            mina "That doesn't make any sense."
+            mina "That doesn't sound like me."
             hide minaneutraltalk
             show minaneutralquiet at center_char
-            narrator "She laughs. It sounds right."
-            narrator "But her eyes are going somewhere she can't tell you about."
+            narrator "She laughs a little. It almost lands."
+            narrator "Her eyes are somewhere you can't follow."
 
-    narrator "That night she knocks on your door. Late. Looks like she hasn't slept."
+    narrator "She comes to your door that night. Late enough that you'd already given up on the day."
+    narrator "She looks like someone who's been awake deciding something."
 
     hide minaneutralquiet
     show minaneutraltalk at center_char
-    mina "I need to tell you something."
-    mina "And I need you to not ask me how I know."
+    mina "I need to tell you something and I need you to not ask me how I know it."
     hide minaneutraltalk
     show minaneutralquiet at center_char
-    eli "Okay."
+    eli "Alright."
     hide minaneutralquiet
     show minaneutraltalk at center_char
-    mina "I remember the previous versions."
+    mina "I remember the other versions."
     hide minaneutraltalk
     show minaneutralquiet at center_char
-    eli "..What?"
+    eli "The other—"
     hide minaneutralquiet
     show minaneutraltalk at center_char
-    mina "The river wasn't always there, and the mayor had a wife."
+    mina "The river wasn't always there. The mayor had a wife. I know because I was there when they weren't."
     hide minaneutraltalk
     show minaneutralquiet at center_char
-    eli "How do you-"
+    eli "How long have you—"
     hide minaneutralquiet
     show minaneutraltalk at center_char
-    mina "I've been pretending not to remember because I thought it was safer."
-    mina "But they're removing people one by one, Eli."
-    mina "And I think I'm next."
+    mina "A while. I thought if I stayed quiet it would be safer."
+    mina "I don't think quiet is going to save me."
     hide minaneutraltalk
     show minaneutralquiet at center_char
 
     if mina_trust >= 2:
-        eli "I know.. I've been keeping a notebook."
+        eli "I've been writing things down. In case."
         hide minaneutralquiet
         show minaneutraltalk at center_char
         mina "Show me."
         hide minaneutraltalk
         show minaneutralquiet at center_char
-        narrator "You show her. She reads every entry. Her face doesn't change but her hands grip the pages tighter."
+        narrator "You show her. She reads slowly. Her expression doesn't change but at some point her grip on the pages tightens."
         hide minaneutralquiet
         show minaneutraltalk at center_char
-        mina "You remembered Petra."
+        mina "You wrote about Petra."
         hide minaneutraltalk
         show minaneutralquiet at center_char
-        eli "Of course, I did."
+        eli "Of course."
         hide minaneutralquiet
         show minaneutraltalk at center_char
         mina "Nobody else does."
         hide minaneutraltalk
         show minaneutralquiet at center_char
-        narrator "She closes the notebook carefully. Like it was something fragile."
+        narrator "She closes the notebook like it's something that could break."
         hide minaneutralquiet
         show minaneutraltalk at center_char
     else:
-        eli "Why are you telling me this now?"
+        eli "Why tell me now?"
         hide minaneutralquiet
         show minaneutraltalk at center_char
         mina "Because I found something."
-        mina "And I might not get another chance."
+        mina "And I don't know how much time I have left to tell anyone."
 
-    mina "Past the invisible walls past the edge of the world."
-    mina "There's a white empty room."
-    mina "Debug menus."
+    mina "Past the edge of the map there's a white room. Empty. Debug menus on the walls."
     mina "And a door."
-    mina "It's locked."
+    mina "I couldn't open it alone."
     hide minaneutraltalk
 
     $ notebook_entries.append("Mina remembers. all of it. she's been pretending not to. found something past the edge - white room, debug stuff, a door.")
