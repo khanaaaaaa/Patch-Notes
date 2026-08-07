@@ -23,6 +23,9 @@ label version_06:
     narrator "You go to Mina's house. There is no Mina's house. There is a field."
     narrator "There has always been a field."
 
+    scene bg field
+    with dissolve
+
     $ show_notebook_icon = False
 
     show mayorsmilequiet at center_char

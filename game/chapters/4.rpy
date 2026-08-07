@@ -53,7 +53,7 @@ label version_035:
             mina "I'm always okay."
             hide minasmiletalk
             show minaneutralquiet at center_char
-    narrator "She says it like a fact. Like something she was told to say."
+            narrator "She says it like a fact. Like something she was told to say."
             hide minaneutralquiet
             $ mina_trust += 1
         "\"Do you notice anything wrong with the sky?\"":
@@ -106,6 +106,9 @@ label version_04:
     narrator "The librarian disappeared on a Thursday. His name was Mr. Voss."
     narrator "He recommended books. Remembered what you liked. Had a cat that slept on the returns desk."
 
+    scene bg library
+    with dissolve
+
     show mayorsmilequiet at center_char
     eli "What happened to Mr. Voss?"
     hide mayorsmilequiet
@@ -120,6 +123,9 @@ label version_04:
     hide mayorsmiletalk 
     narrator "The cat is gone too. There's a dent in the cushion on the returns desk."
     narrator "The shape of something small that used to sleep there."
+
+    scene bg town
+    with dissolve
 
     narrator "You start hearing it at night. Not a voice. More like a system sound. Low. Flat. Final."
     narrator "\"Optimization complete.\""

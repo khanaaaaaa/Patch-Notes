@@ -1491,6 +1491,7 @@ style nvl_dialogue:
     min_width gui.nvl_text_width
     textalign gui.nvl_text_xalign
     layout ("subtitle" if gui.nvl_text_xalign else "tex")
+    color "#000000"
 
 style nvl_thought:
     xpos gui.nvl_thought_xpos
@@ -1500,6 +1501,7 @@ style nvl_thought:
     min_width gui.nvl_thought_width
     textalign gui.nvl_thought_xalign
     layout ("subtitle" if gui.nvl_text_xalign else "tex")
+    color "#000000"
 
 style nvl_button:
     properties gui.button_properties("nvl_button")

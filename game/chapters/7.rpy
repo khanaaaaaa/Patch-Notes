@@ -20,13 +20,20 @@ label version_07:
     narrator "The other half still acts like a cozy village. The empty stall, the library with no librarian."
     narrator "Two realities in the same space. Neither noticing the other."
 
+    scene bg library
+    with dissolve
+
     menu:
         "Follow the quest markers.":
+            scene bg town
+            with dissolve
             narrator "You follow every marker."
             narrator "Every single one leads to nothing."
             narrator "The game is promising things it hasn't built yet."
             $ eli_awareness += 1
         "Go back to the field where Mina's house was.":
+            scene bg field
+            with dissolve
             narrator "You go back to the field."
             narrator "You sit with her notebook."
             narrator "You read it again."

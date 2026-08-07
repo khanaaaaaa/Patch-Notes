@@ -6,13 +6,16 @@ label version_09:
     narrator "You find the ROOT door. Mina's notes tell you how."
     narrator "Past the invisible wall at the north edge of town, through the white void, past the floating geometry."
 
-    scene bg black
+    scene bg void
     with dissolve
 
     narrator "The door opens when you touch it. It was never locked."
     narrator "She just couldn't open it alone."
 
     narrator "No monsters. No final boss. No dramatic music."
+
+    scene bg apartment
+    with dissolve
 
     narrator "A small apartment. One room. A desk with a computer."
     narrator "Coffee cups, four of them, all cold. Sticky notes covering the monitor."
