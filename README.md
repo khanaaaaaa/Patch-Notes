@@ -20,6 +20,9 @@ The hardest part in Ren'Py is keeping track of what variables are set where. The
 
 On the technical side, getting backgrounds to scale properly across different image formats (jpg, avif, webp) took longer than expected due to an error in how `bg_fit` was initially defined. UTF-8 encoding issues with PowerShell's `Set-Content` also caused corrupted em dashes in the script files.
 
+## AI Usage
+
+Used AI for debugging the notebook on screen, was following a tutorial but struggles a lot with it.
 ## Art Credits
 
 None of the character art in this project belongs to me.
